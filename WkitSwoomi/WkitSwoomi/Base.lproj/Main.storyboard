@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WkitSwoomi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Vm-5u-tMP">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration" allowsInlineMediaPlayback="YES" allowsPictureInPictureMediaPlayback="NO">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES" video="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8A4-fz-Vni">
+                                <rect key="frame" x="0.0" y="690" width="414" height="172"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="음성인식"/>
+                                <connections>
+                                    <action selector="speechToText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nby-W5-YS4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6Vm-5u-tMP" secondAttribute="bottom" id="3IB-Of-icg"/>
+                            <constraint firstItem="8A4-fz-Vni" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="646" id="3ai-1z-LMU"/>
+                            <constraint firstItem="6Vm-5u-tMP" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6eL-dl-0Dg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Vm-5u-tMP" secondAttribute="trailing" id="9pt-xW-cLX"/>
+                            <constraint firstItem="8A4-fz-Vni" firstAttribute="trailing" secondItem="6Vm-5u-tMP" secondAttribute="trailing" id="OBG-Em-PI0"/>
+                            <constraint firstItem="6Vm-5u-tMP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vut-mk-pjF"/>
+                            <constraint firstItem="8A4-fz-Vni" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="bPw-qW-lLX"/>
+                            <constraint firstItem="8A4-fz-Vni" firstAttribute="leading" secondItem="6Vm-5u-tMP" secondAttribute="leading" id="cmz-aE-F0n"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="8A4-fz-Vni" id="LSd-Xi-nGJ"/>
+                        <outlet property="webView" destination="6Vm-5u-tMP" id="dum-Pk-o1O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
