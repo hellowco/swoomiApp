@@ -18,6 +18,10 @@
 		8C04F432278D748E004CB155 /* MiniChampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04F42D278D748E004CB155 /* MiniChampCollectionViewCell.swift */; };
 		8C04F433278D748E004CB155 /* MainChampCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04F42E278D748E004CB155 /* MainChampCollectionViewCell.swift */; };
 		8C04F434278D748E004CB155 /* MiniChampSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C04F42F278D748E004CB155 /* MiniChampSectionView.swift */; };
+		8C422F7E27A016B5000CED15 /* frequentItems.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C422F7D27A016B5000CED15 /* frequentItems.swift */; };
+		8C422F8027A0201A000CED15 /* opponentsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C422F7F27A0201A000CED15 /* opponentsData.swift */; };
+		8C422F8227A021A9000CED15 /* onGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C422F8127A021A9000CED15 /* onGame.swift */; };
+		8C422F8427A03B46000CED15 /* coolTimeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C422F8327A03B46000CED15 /* coolTimeInfo.swift */; };
 		8C65C9682756550D00A2060A /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8C65C9672756550D00A2060A /* SnapKit */; };
 		8C6943FB275235E6000C560F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6943FA275235E6000C560F /* AppDelegate.swift */; };
 		8C6943FD275235E6000C560F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6943FC275235E6000C560F /* SceneDelegate.swift */; };
@@ -41,6 +45,10 @@
 		8C04F42D278D748E004CB155 /* MiniChampCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniChampCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C04F42E278D748E004CB155 /* MainChampCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainChampCollectionViewCell.swift; sourceTree = "<group>"; };
 		8C04F42F278D748E004CB155 /* MiniChampSectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniChampSectionView.swift; sourceTree = "<group>"; };
+		8C422F7D27A016B5000CED15 /* frequentItems.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = frequentItems.swift; sourceTree = "<group>"; };
+		8C422F7F27A0201A000CED15 /* opponentsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = opponentsData.swift; sourceTree = "<group>"; };
+		8C422F8127A021A9000CED15 /* onGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onGame.swift; sourceTree = "<group>"; };
+		8C422F8327A03B46000CED15 /* coolTimeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coolTimeInfo.swift; sourceTree = "<group>"; };
 		8C6943F7275235E6000C560F /* Swoomi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swoomi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C6943FA275235E6000C560F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8C6943FC275235E6000C560F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -138,6 +146,10 @@
 			children = (
 				8C7CC73B279A7C2E00502076 /* spellImage.swift */,
 				8C7CC73E279A7D7C00502076 /* summonerInfo.swift */,
+				8C422F7D27A016B5000CED15 /* frequentItems.swift */,
+				8C422F7F27A0201A000CED15 /* opponentsData.swift */,
+				8C422F8127A021A9000CED15 /* onGame.swift */,
+				8C422F8327A03B46000CED15 /* coolTimeInfo.swift */,
 			);
 			path = getAPI;
 			sourceTree = "<group>";
@@ -222,6 +234,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C04F434278D748E004CB155 /* MiniChampSectionView.swift in Sources */,
+				8C422F8427A03B46000CED15 /* coolTimeInfo.swift in Sources */,
+				8C422F8227A021A9000CED15 /* onGame.swift in Sources */,
 				8C04F433278D748E004CB155 /* MainChampCollectionViewCell.swift in Sources */,
 				8C04F41F278C13BD004CB155 /* SearchBarView.swift in Sources */,
 				8CB7B05B27957D6F00572726 /* NotInGameViewController.swift in Sources */,
@@ -232,6 +246,8 @@
 				8C6943FB275235E6000C560F /* AppDelegate.swift in Sources */,
 				8C6943FD275235E6000C560F /* SceneDelegate.swift in Sources */,
 				8C04F414278BDE87004CB155 /* ChampCollectionViewController.swift in Sources */,
+				8C422F7E27A016B5000CED15 /* frequentItems.swift in Sources */,
+				8C422F8027A0201A000CED15 /* opponentsData.swift in Sources */,
 				8C04F41D278C105E004CB155 /* MainViewController.swift in Sources */,
 				8C04F425278C28E8004CB155 /* FeatureSectionViews.swift in Sources */,
 				8C7CC73C279A7C2E00502076 /* spellImage.swift in Sources */,
